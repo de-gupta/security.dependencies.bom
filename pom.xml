@@ -7,12 +7,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>security.dependencies.bom</name>
+    <name>${artifactId}</name>
     <description>A Maven BOM for shared dependencies used by the commons-security stack</description>
     <url>https://github.com/de-gupta/security.dependencies.bom.git</url>
 
     <properties>
-        <java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <aletheia.version>0.5.0</aletheia.version>
@@ -24,8 +23,6 @@
         <maven.release.plugin.version>3.1.1</maven.release.plugin.version>
         <maven.gpg.plugin.version>3.2.8</maven.gpg.plugin.version>
         <maven.central.publishing.version>0.8.0</maven.central.publishing.version>
-        <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
-        <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -96,32 +93,6 @@
                         <phase>verify</phase>
                         <goals>
                             <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>${maven.source.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven.javadoc.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
