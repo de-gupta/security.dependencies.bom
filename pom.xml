@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.de-gupta</groupId>
         <artifactId>security.parent</artifactId>
-        <version>0.1.0</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>security.dependencies.bom</artifactId>
@@ -21,8 +21,9 @@
         <athena.version>0.5.0</athena.version>
 
         <jjwt.version>0.13.0</jjwt.version>
-        <junit.jupiter.version>5.13.1</junit.jupiter.version>
-        <assertj.core.version>3.27.3</assertj.core.version>
+
+        <junit.jupiter.version>6.0.3</junit.jupiter.version>
+        <assertj.core.version>3.27.7</assertj.core.version>
     </properties>
 
     <dependencyManagement>
@@ -37,6 +38,7 @@
                 <artifactId>athena</artifactId>
                 <version>${athena.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-api</artifactId>
@@ -52,6 +54,7 @@
                 <artifactId>jjwt-jackson</artifactId>
                 <version>${jjwt.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter</artifactId>
