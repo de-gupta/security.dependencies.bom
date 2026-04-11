@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>security.dependencies.bom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -72,6 +72,6 @@
         <connection>scm:git:ssh://git@github.com/de-gupta/security.dependencies.bom.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/de-gupta/security.dependencies.bom.git</developerConnection>
         <url>https://github.com/de-gupta/security.dependencies.bom.git</url>
-        <tag>v1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 </project>
