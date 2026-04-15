@@ -17,8 +17,8 @@
     <url>https://github.com/de-gupta/security.dependencies.bom.git</url>
 
     <properties>
-        <aletheia.version>0.7.0</aletheia.version>
-        <athena.version>0.5.0</athena.version>
+        <aletheia.version>0.8.0</aletheia.version>
+        <athena.version>0.5.1</athena.version>
 
         <jjwt.version>0.13.0</jjwt.version>
 
